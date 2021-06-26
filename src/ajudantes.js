@@ -1,6 +1,6 @@
 const ajudantes = () => { 
 	return `           
-╔════ ◤ 𝙍𝙄𝙂𝘽𝙔 𝘽𝙊𝙏✗✘◢
+╔════ ◤ BOT OMAR✗✘◢
 ║╔▸〘 LOGOS 〙 
 ║╠➥${prefix}blackpink
 ║╠➥${prefix}neon
@@ -75,15 +75,11 @@ const ajudantes = () => {
 ║╠➥${prefix}silverplaybutton
 ║╠➥${prefix}freefire
 ║╚════════════
-╠════〘 𝙎𝙍 𝙍𝙄𝙂𝘽𝙔✗✘ 〙
+╠════〘 BOT OMAR✗✘ 〙
 ║╔▸
-║╠➥ *dono 𝙎𝙍 𝙍𝙄𝙂𝘽𝙔✗✘ (base SKILLER)*
-║╠➥ *wa.me/+558591212543*
-║╠➥ *status: ON*
-║╠➥ *Caso algum comando pare *
-║╠➥ *de funcionar digite*
-║╠➥*${prefix}bugreport*
-║╚▸
-╚═══ ◤𝙍𝙄𝙂𝘽𝙔 𝘽𝙊𝙏✗✘◢ ` 
+║╠➥ *dono BOT OMAR✗✘ (base SKILLER)*
+║╠➥ *wa.me/+51929480831*
+║╠➥ *status: ACTIVO*
+╚═══ ◤BOT OMAR✗✘◢ ` 
 }
 exports.ajudantes = ajudantes
