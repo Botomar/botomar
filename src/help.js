@@ -1,31 +1,31 @@
 const help = (prefix) => {
 return`
-╔════ ◤ 𝙍𝙄𝙂𝘽𝙔 𝘽𝙊𝙏✗✘◢
+╔════ ◤ BOT OMAR✗✘◢
 ║╔════════════
-║╠➥wa.me/+558591212543
-║╠➥STATUS: ON✓
+║╠➥wa.me/+51929480831
+║╠➥ESTADO: ON✓
 ║╠➥BATERIA 50%🔋
 ║╠➥*${prefix}dono*
 ║╠➥*${prefix}owner*
 ║╠➥*${prefix}bugreport*
-║╠➥⚠️Caso encontre erros
+║╠➥⚠️Caso encuentre errores
 ║╠➥PREFIX:〘${prefix}〙
 ║╚════════════
 ║╔▸〘 MENU 〙 
 ║╠➥*${prefix}stickermenu*
-║╠➥⚠️ menu de criação de stickers
+║╠➥⚠️ menu de creador de stickers
 ║╠➥*${prefix}plays*
 ║╠➥⚠️ plays de musica
-║╠➥Downloads de audios do YT
+║╠➥Descargas de audios de YT
 ║╠➥*${prefix}jogos*
-║╠➥⚠️ comandos de jogos 
+║╠➥⚠️ comandos de juegos 
 ║╠➥para zoar com amigos.
 ║╠➥*${prefix}musicmenu* 
 ║╠➥ ⚠️ musicas
 ║╠➥*${prefix}rigby*
 ║╠➥ ⚠️ comandos que so o dono do bot pode usar 
 ║╠➥*${prefix}logomenu*
-║╠➥⚠️faça logos personalizadas
+║╠➥⚠️busca logos personalizadas
 ║╠➥*${prefix}moddroid*
 ║╠➥⚠️ pesquisa apks mod
 ║╠➥*${prefix}xnxxsearch*
@@ -33,16 +33,13 @@ return`
 ║╠➥*${prefix}xnxx*
 ║╠➥⚠️ pesquisa vídeos +18
 ║╚════════════
-╠════〘 INFORMAÇÕES 〙
+╠════〘 INFORMACIÓN 〙
 ║╔▸
-║╠➥ *dono 𝙎𝙍 𝙍𝙄𝙂𝘽𝙔✗✘ (base SKILLER)*
-║╠➥ *wa.me/+558591212543*
-║╠➥ *status: ON*
-║╠➥Caso algum comando pare 
-║╠➥de funcionar digite
-║╠➥*${prefix}bugreport*
+║╠➥ *dono BOT OMAR✗✘ (base SKILLER)*
+║╠➥ *wa.me/+51929480831*
+║╠➥ *status: ACTIVO*
 ║╚▸
-╚═══ ◤𝙍𝙄𝙂𝘽𝙔 𝘽𝙊𝙏✗✘◢ ` 
+╚═══ ◤BOT OMAR✗✘◢ ` 
 }
 
 exports.help = help
