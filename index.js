@@ -213,7 +213,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `𝐎𝐩𝐚 @${num.split('@')[0]}\n𝐁𝐞𝐦 𝐯𝐢𝐧𝐝𝐨 𝐚𝐨 𝐠𝐫𝐮𝐩𝐨 *${mdata.subject}*\n\n𝐥𝐞𝐢𝐚 𝐚𝐬 𝐫𝐞𝐠𝐫𝐚𝐬 𝐝𝐨 𝐠𝐫𝐮𝐩𝐨 𝐩𝐚𝐫𝐚 𝐧𝐚𝐨 𝐬𝐞𝐫 𝐛𝐚𝐧𝐢𝐝𝐨❤️`
+				teks = `HOLA @${num.split('@')[0]}\nBIENVENID@ AL GRUPO 😃 *${mdata.subject}*\n\nLEA LAS REGLAS DEL GRUPO PARA NO SER ELIMINADO❤️`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 				client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -228,10 +228,10 @@ async function starts() {
     .      　。　　　　•　    　ﾟ　　。
     　　.　　　.　　　  　　.　　　　　。　　   。　.
     　.　　      。　        ඞ   。　    .    •
-    •            @${num.split('@')[0]}was E j e c t e d
+    •            @${num.split('@')[0]}was ELIMINADO 🤹
                       1 impostor restante   。　.
     　 　　。　　 　　　　ﾟ　　　.　      　　
-𝐀𝐯𝐢𝐬𝐨 𝐩𝐚𝐫𝐚 𝐯𝐨𝐜𝐞 𝐪𝐮𝐞 𝐬𝐚𝐢𝐮 @${num.split('@')[0]} 𝐁𝐨𝐢 𝐛𝐨𝐢 𝐛𝐨𝐢,𝐛𝐨𝐢 𝐝𝐚 𝐜𝐚𝐫𝐚 𝐩𝐫𝐞𝐭𝐚 𝐪𝐮𝐞𝐦 𝐬𝐚𝐢𝐮 𝐝𝐨 𝐠𝐫𝐮𝐩𝐨 𝐦𝐚𝐦𝐚 𝐚 𝐩𝐢𝐤𝐚 𝐝𝐨 𝐜𝐚𝐩𝐞𝐭𝐚😂👋`
+𝐀𝐯𝐢𝐬𝐨 𝐩𝐚𝐫𝐚 todos @${num.split('@')[0]} SE FUE TOTAL NO IMPORTABA ADIOS!😂👋`
 				        
     
 				let buff = await getBuffer(ppimg)
@@ -282,12 +282,12 @@ async function starts() {
 					Iv: '❌ Link inválido ❌'
 				},
 				only: {
-					group: '❌ Este comando só pode ser usado em grupos! ❌',
-					premium: '[❗] ESTE PEDIDO É SO PARA *USUÁRIOS PREMIUMS*',
+					group: '❌ Este comando solo puede ser usado en grupos! ❌',
+					premium: '[❗] ESTE PEDIDO ES SOLO PARA *USUÁRIOS PREMIUMS*',
 					ownerG: '❌ Este comando só pode ser usado pelo dono! ❌',
 					ownerB: '❌ Este comando só pode ser usado pelo meu dono! ❌',
-					admin: '❌ Este comando só pode ser usado por administradores de grupo! ❌',
-					Badmin: '❌ Este comando só pode ser usado quando o bot se torna administrador! ❌'
+					admin: '❌ Este comando solo puede ser usado por administradores del grupo! ❌',
+					Badmin: '❌ Este comando solo puede ser cuando el bot se torne administrador! ❌'
 				}
 			}
 
@@ -678,13 +678,13 @@ async function starts() {
 		if (isGroupAdmins) return reply('cara, nao poste essas coisas, é errado, mas vc e admin n irei te banir')
 		client.updatePresence(from, Presence.composing)
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`link telegram detectado ${sender.split("@")[0]} voce sera expulso deste grupo `)
+		reply(`link telegram detectado ${sender.split("@")[0]} Usted será expulsado del grupo `)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 0)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("peça permissão proxima vez")
+			reply("no lo vuelvan hacer")
 		}, 0)
 	}
 	
@@ -695,13 +695,13 @@ async function starts() {
 		if (isGroupAdmins) return reply('cara, nao poste essas coisas, é errado, mas vc e admin n irei te banir')
 		client.updatePresence(from, Presence.composing)
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`tchau link whatsApp ${sender.split("@")[0]} voce sera expulso deste grupo `)
+		reply(`tchau link whatsApp ${sender.split("@")[0]} Usted será expulsado del grupo `)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 0)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("proxima vez peça permissão ao ademir")
+			reply("no lo vuelvan hacer")
 		}, 0)
 	}
 	
@@ -711,7 +711,7 @@ async function starts() {
 		if (isGroupAdmins) return reply('cara, nao poste essas coisas, é errado, mas vc e admin n irei te banir')
 		client.updatePresence(from, Presence.composing)
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`tchau spammer ${sender.split("@")[0]} voce sera expulso `)
+		reply(`tchau spammer ${sender.split("@")[0]} Usted será expulsado del grupo `)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 0)
@@ -728,13 +728,13 @@ async function starts() {
 		if (isGroupAdmins) return reply('cara, nao poste essas coisas, é errado, mas vc e admin n irei te banir')
 		client.updatePresence(from, Presence.composing)
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`tchau spammer ${sender.split("@")[0]} voce sera expulso deste grupo `)
+		reply(`tchau spammer ${sender.split("@")[0]} Usted será expulsado del grupo `)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 0)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("vai postar merda de tiktok em outro lugar")
+			reply("vai postar merda de tiktok en otro lugar")
 		}, 0)
 	}
 	
@@ -744,7 +744,7 @@ async function starts() {
 		if (isGroupAdmins) return reply('vc é admin, então n irei te dar ban por usar links, rlx 🙂')
 		client.updatePresence(from, Presence.composing)
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`link detectado ${sender.split("@")[0]} voce sera expulso deste grupo `)
+		reply(`link detectado ${sender.split("@")[0]} Usted será expulsado del grupo `)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 0)
@@ -760,7 +760,7 @@ async function starts() {
 		if (isGroupAdmins) return reply('vc é admin, então n irei te dar ban por usar links, rlx 🙂')
 		client.updatePresence(from, Presence.composing)
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`link detectado ${sender.split("@")[0]} voce sera expulso deste grupo `)
+		reply(`link detectado ${sender.split("@")[0]} Usted será expulsado del grupo `)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 0)
@@ -784,7 +784,7 @@ async function starts() {
 			if (authorname != undefined) { } else { authorname = groupName }	
 			
 			function addMetadata(packname, author) {	
-				if (!packname) packname = 'RIGBY'; if (!author) author = 'Sr Rigby';	
+				if (!packname) packname = 'OMARBOT'; if (!author) author = 'Omar Bot';	
 				author = author.replace(/[^a-zA-Z0-9]/g, '');	
 				let name = `${author}_${packname}`
 				if (fs.existsSync(`./src/stickers/${name}.exif`)) return `./src/stickers/${name}.exif`
@@ -1483,25 +1483,23 @@ break
 				reply(teks.trim())
 				break
                 case 'ytplay':
-                if (args.length < 1) return reply(`qual título mano?\nexemplo : ${prefix + command} Teto Paypal`)
-                reply('Procurando sua música...⏳')
+                if (args.length < 1) return reply(`cual título mano?\nexemplo : ${prefix + command} Teto Paypal`)
+                reply('BUSCANDO SU MUSICA🤹😃...⏳')
                 query = args.join(' ')
                 get_result = await fetchJson(`https://api.lolhuman.xyz/api/ytplay?apikey=8cedf7d9513db18b1c7571ac&query=${query}`)
                 get_result = get_result.result
                 get_info = get_result.info
                 ini_txt = `Titulo : ${get_info.title}\n`
                 ini_txt += `Uploader : ${get_info.uploader}\n`
-                ini_txt += `Duration : ${get_info.duration}\n`
-                ini_txt += `View : ${get_info.view}\n`
-                ini_txt += `Like : ${get_info.like}\n`
-                ini_txt += `Dislike : ${get_info.dislike}\n`
-                ini_txt += `Description :\n ${get_info.description}\n\n\n`
+                ini_txt += `Duracion : ${get_info.duration}\n`
+                ini_txt += `Vistas : ${get_info.view}\n`
+                ini_txt += `Me gusta : ${get_info.like}\n`
+                ini_txt += `Discusta : ${get_info.dislike}\n`
+                ini_txt += `Descripcion :\n ${get_info.description}\n\n\n`
                 ini_buffer = await getBuffer(get_info.thumbnail)
                 client.sendMessage(from, ini_buffer, image, { quoted: mek, caption: ini_txt })
                 get_audio = await getBuffer(get_result.audio[3].link)
                 client.sendMessage(from, get_audio, audio, { mimetype: 'audio/mp4', filename: `${get_info.title}.mp3`, quoted: mek})
-                get_video = await getBuffer(get_result.video[0].link)
-                client.sendMessage(from, get_video, video, { mimetype: 'video/mp4', filename: `${get_info.title}.mp4`, quoted: mek})
                 break
                 case 'ytplay2':
                 if (args.length < 1) return reply(`qual título mano?\nexemplo : ${prefix + command} Teto Paypal`)
@@ -2124,7 +2122,7 @@ break
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di tendang!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
-						teks = 'Pedido recebido, emitido :\n'
+						teks = 'Pedido recebido, emitido bam 🤹👹 :\n'
 						for (let _ of mentioned) {
 							teks += `@${_.split('@')[0]}\n`
 						}
