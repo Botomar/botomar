@@ -3,18 +3,18 @@ const menufig = (prefix) => {
 ╔════ ◤STICKERS◢
 ║╔▸ 
 ║╠➥  *${prefix}sticker ou ${prefix}f*
-║╠➥⚠️ mande uma foto com legenda ${prefix}f
+║╠➥⚠️ mande una foto con leyenda ${prefix}f
 ║╠➥ou marque com ${prefix}f
 ║╠➥  *${prefix}toimg*
-║╠➥⚠️ converte sticker em foto>marque um sticker
+║╠➥⚠️ convierte sticker en foto>marque um sticker
 ║╠➥  *${prefix}attp*
-║╠➥⚠️ cria um sticker de texto piscando
+║╠➥⚠️ crea un sticker de texto piscando
 ║╠➥  *${prefix}EM BREVE*
 ║╠➥⚠️ ....
 ║╠➥  *${prefix}EM BREVE*
 ║╠➥⚠️ ....
 ║╚▸
-╚═══ ◤𝙍𝙄𝙂𝘽𝙔 𝘽𝙊𝙏✗✘◢ ` 
+╚═══ ◤BOT OMAR✗✘◢ ` 
 }
 
 exports.menufig = menufig
