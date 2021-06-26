@@ -6,9 +6,9 @@ const plays = (prefix) => {
 ║╠➥⚠️recerba de música y video*
 ║╠➥*${prefix}ytplay2
 ║╠➥⚠️recerba de música y video*
-║╠➥ *${prefix}play >mais utilizado*
+║╠➥ *${prefix}play1 >mais utilizado*
 ║╠➥⚠️baixa música do yt
-║╠➥ *${prefix}play1 >play reserva*
+║╠➥ *${prefix}play10 >play reserva*
 ║╠➥⚠️baixa música do yt
 ║╠➥ *${prefix}play2 >play reserva*
 ║╠➥⚠️baixa música do yt
