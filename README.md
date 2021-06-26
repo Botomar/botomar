@@ -4,10 +4,10 @@
         <img src= "https://thumbs.gfycat.com/DapperScrawnyBorderterrier-size_restricted.gif">
     </p>
     <p>
-        <a href="https://github.com/Botomar/botomar"><img title="Author"    src="https://img.shields.io/badge/botomar-purple.svg?style=for-the-badge&logo=github"></a>
+        <a href="https://github.com/Botomar1/botomar1"><img title="Author"    src="https://img.shields.io/badge/botomar-purple.svg?style=for-the-badge&logo=github"></a>
     </p>
     <p>
-        <a href="https://github.com/Botomar/followers"><img title="Followers" src="https://img.shields.io/github/followers/Botomar?color=blue&style=flat-square"></a>
+        <a href="https://github.com/Botomar1/followers"><img title="Followers" src="https://img.shields.io/github/followers/Botomar?color=blue&style=flat-square"></a>
         <a href="https://github.com/mhankbarbar/termux-wabot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/mhankbarbar/termux-wabot?label=Watchers&color=blue&style=flat-square"></a>
         <a href="https://github.com/mhankbarbar/termux-wabot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/mhankbarbar/termux-wabot?color=blue&style=flat-square"></a>
         <a href="https://github.com/mhankbarbar/termux-wabot/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/mhankbarbar/termux-wabot?color=blue&style=flat-square"></a>
@@ -19,8 +19,8 @@
 [Termux](https://play.google.com/store/apps/details?id=com.termux&hl=pt_BR&gl=US)
 
 ```
-git clone https://github.com/Botomar/botomar
-cd Botomar
+git clone https://github.com/Botomar1/botomar1
+cd Botomar1
 bash install.sh
 
 (iniciar o bot manualmente)
