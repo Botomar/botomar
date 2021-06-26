@@ -3,7 +3,7 @@ const modapk = () => {
 	
 🎁𝐏𝐑𝐄𝐒𝐄𝐍𝐓𝐄 𝐏𝐑𝐀 𝐕𝐂𝐒
 
-🔥𝐀𝐏𝐏 𝐏𝐑𝐀 𝐃𝐄𝐒𝐀𝐓𝐈𝐕𝐀𝐑 𝐍𝐔́𝐌𝐄𝐑𝐎 :
+🔥𝐀𝐏𝐏 𝐏A𝐑𝐀 𝐃𝐄𝐒𝐀𝐓𝐈𝐕𝐀𝐑 𝐍𝐔́𝐌𝐄𝐑𝐎 :
 
 https://download2164.mediafire.com/nj6c3facwccg/2hph9lu9hzw3zs u/App+de+desativar+n%C3%BAmeros.apk
 
