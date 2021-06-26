@@ -1,23 +1,23 @@
 const skiller = (prefix) => {
 	return `
-╔════ ◤ 𝙍𝙄𝙂𝘽𝙔 𝘽𝙊𝙏✗✘◢
-║╔▸〘 𝙍𝙄𝙂𝘽𝙔 〙 
+╔════ ◤ BOT OMAR✗✘◢
+║╔▸〘 OMAR 〙 
 ║╠➥  *${prefix}alerta*
-║╠➥⚠️ para fazer um alerta
+║╠➥⚠️ para hacer una alerta
 ║╠➥  *${prefix}divulgar*
 ║╠➥⚠️ de aviso de videos
 ║╠➥  *${prefix}bc*
-║╠➥⚠️ fazer tm para  todos os usuários
+║╠➥⚠️ hacer tm para  todos los usuários
 ║╠➥  *${prefix}setprefix*
 ║╠➥⚠️ mudar o prefixo do bot
 ║╠➥  *${prefix}hidetag*
-║╠➥⚠️ marcação invisível
+║╠➥⚠️ mensaje  invisible
 ║╠➥*${prefix}clearall*
-║╠➥⚠️ limpar todos os chats
+║╠➥⚠️ limpar todos los chats
 ║╠➥*${prefix}delete*
 ║╠➥⚠️deletar mensagem
 ║╚▸
-╚═══ ◤𝙍𝙄𝙂𝘽𝙔 𝘽𝙊𝙏✗✘◢ ` 
+╚═══ ◤BOT OMAR✗✘◢ ` 
 }
 
 exports.skiller = skiller
