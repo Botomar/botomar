@@ -3,7 +3,7 @@ const plays = (prefix) => {
 ╔════ ◤ MÚSICA✗✘◢
 ║╔▸
 ║╠➥*${prefix}ytplay
-║╠➥⚠️recerba de música y video*
+║╠➥⚠️recerba de música *
 ║╠➥*${prefix}ytplay2
 ║╠➥⚠️recerba de música y video*
 ║╠➥ *${prefix}play1 >mais utilizado*
