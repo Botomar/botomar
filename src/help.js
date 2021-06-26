@@ -32,6 +32,9 @@ return`
 ║╠➥⚠️ pesquisa vídeos +18
 ║╠➥*${prefix}xnxx*
 ║╠➥⚠️ pesquisa vídeos +18
+║╠➥⚠️ tareas
+║╠➥*${prefix}brainly*
+║╠➥*${prefix}.google*
 ║╚════════════
 ╠════〘 INFORMACIÓN 〙
 ║╔▸
