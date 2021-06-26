@@ -3,9 +3,9 @@ const plays = (prefix) => {
 ╔════ ◤ MÚSICA✗✘◢
 ║╔▸
 ║╠➥*${prefix}ytplay
-║╠➥⚠️baixa música do yt+vídeo*
+║╠➥⚠️recerba de música y video*
 ║╠➥*${prefix}ytplay2
-║╠➥⚠️baixa música do yt+vídeo*
+║╠➥⚠️recerba de música y video*
 ║╠➥ *${prefix}play >mais utilizado*
 ║╠➥⚠️baixa música do yt
 ║╠➥ *${prefix}play1 >play reserva*
@@ -19,12 +19,12 @@ const plays = (prefix) => {
 ║╠➥ *${prefix}play5 >play reserva*
 ║╠➥⚠️baixa música do yt
 ║╚════════════
-╠════〘INFORMAÇÕES〙
-║╔▸
+╠════〘INFORMACION〙
+║╔▸➥BOTOMAR 
 ║╠➥_os reseva sao caso um_ 
 ║╠➥_nao funciona ou bug_
-║╚▸
-╚═══ ◤𝙍𝙄𝙂𝘽𝙔 𝘽𝙊𝙏✗✘◢ ` 
+║╚▸IMPERIO DE LA MÚSICA
+╚═══ ◤BOT OMAR✗✘◢ ` 
 }
 
 exports.plays = plays
