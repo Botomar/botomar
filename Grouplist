@@ -1,0 +1,20 @@
+let  handler  =  async  ( m ,  { conn } )  =>  {
+  deje  txt  =  conn . chats . matriz . filter ( v  =>  v . jid . endsWith ( 'g.us' ) ) . map ( v  => ` $ { conn . getName ( v . jid ) } \ n $ { v . jid } [ $ { v . read_only ? 'Left' : 'Joined' } ]`) . unirse a `\ n \ n`
+  conn . responder ( m . chat ,  'Listar grupos: \ n'  +  txt ,  m )
+}
+manejador . help  =  [ 'grupos' ,  'lista de grupos' ]
+manejador . etiquetas  =  [ 'información' ]
+manejador . comando  =  / ^ ( grupo ( s | lista ) ) $ / i
+manejador . propietario  =  falso
+manejador . mods  =  falso
+manejador . prima  =  falso
+manejador . grupo  =  falso
+manejador . privado  =  falso
+
+manejador . admin  =  falso
+manejador . botAdmin  =  falso
+
+manejador . falla  =  nulo
+manejador . límite  =  verdadero
+
+módulo . exportaciones  =  manipulador
