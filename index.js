@@ -228,7 +228,7 @@ async function starts() {
     .      　。　　　　•　    　ﾟ　　。
     　　.　　　.　　　  　　.　　　　　。　　   。　.
     　.　　      。　        ඞ   。　    .    •
-    •            @${num.split('@')[0]}was ELIMINADO 🤹
+    •            @${num.split('@')[0]} ELIMINADO 🤹
                       1 impostor restante   。　.
     　 　　。　　 　　　　ﾟ　　　.　      　　
 𝐀𝐯𝐢𝐬𝐨 𝐩𝐚𝐫𝐚 todos @${num.split('@')[0]} SE FUE TOTAL NO IMPORTABA ADIOS!😂👋`
@@ -1503,7 +1503,7 @@ break
                 break
                 case 'ytplay2':
                 if (args.length < 1) return reply(`qual título mano?\nexemplo : ${prefix + command} Teto Paypal`)
-                reply('Procurando sua música...⏳')
+                reply('BUSCANDO SU MUSICA POR FAVOR ESPERE...⏳')
                 query = args.join(' ')
                 get_result = await fetchJson(`https://api.lolhuman.xyz/api/ytplay2?apikey=8cedf7d9513db18b1c7571ac&query=${query}`)
                 get_result = get_result.result
@@ -1528,8 +1528,8 @@ break
                 client.sendMessage(from, lagu, MessageType.audio, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐝𝐨 𝐩𝐨𝐫 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./assets/botlogo.webp')} } }, caption: "<//>" })
                 break
 case 'play2':
-if (args.length < 1) return reply('Digite o nome da música')
-                reply('Procurando sua musica..')
+if (args.length < 1) return reply('Digite el nombre de la música')
+                reply('BUSCANDO SU MUSICA POR FAVOR ESPERE..')
                 anu = await fetchJson(`https://api-exteam.herokuapp.com/api/yt/playmp3?query=${body.slice(6)}&apikey=estreia`)
                 if (anu.error) return reply(anu.error)
          //       ingfomp3 = `*Musica encontrada*\n Titulo : ${anu.title}\nCanal: ${anu.channel}\nPublicado: ${anu.published}\nViews: ${anu.views}\n\n*Enviando audio🎶*`
