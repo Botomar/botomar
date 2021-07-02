@@ -2158,7 +2158,27 @@ break
 						fs.unlinkSync(ran)
 					})
 					break
-				
+			case prefix+ 'ytmp3':
+if (args.length === 0) return reply(`Ejemplo: *${prefix}video* _El link del video para descargar`)
+       let isLinks = args[0].match(/(?:https?:\/{2})?(?:w{3}\.)?youtu(?:be)?\.(?:com|be)(?:\/watch\?v=|\/)([^\s&]+)/)
+    if (!isLinks) return reply(mess.error.Iv)
+     try {
+          reply(mess.musica)
+      yta(args[0])
+   .then((res) => {
+const { dl_link, thumb, title, filesizeF, filesize } = res
+axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+.then((a) => {
+if (Number(filesize) >= 30000) return sendMediaURL(from, thumb, `*DESCARGADOR DE AUDIO BY FELIXCRACK*\n\n*🤓Titulo*: ${title}\n*⏭️Extensión*:MP3\n*⚖️Tamaño*:${filesizeF}\n*Link* : ${a.data}\n\n_Para la duración de más del límite se presenta en forma de enlace_`)
+const captions = `*DESCARGADOR DE AUDIO BY FELIXCRACK*\n\n*🤓Titulo*: ${title}\n*⏭️Extensión*:MP3\n*⚖️Tamaño*:${filesizeF}\n\n_ESPERE ENVIANDO ARCHIVO, NO SPAMES LA CONCHA DE TU MADRE_`
+sendMediaURL(from, thumb, captions)
+sendMediaURL(from, dl_link).catch(() => reply(mess.error.api))
+})
+})
+} catch (err) {
+reply(mess.error.api)
+}
+break	
 				case 'simih':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -2184,7 +2204,7 @@ break
 						if (isWelkom) return reply('já ativo hmm')
 						welkom.push(from)
 						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
-						reply('Ativado com sucesso o recurso Boas vindas do grupo✔️')
+						reply('Ativado para bienvenidas en el grupo grupo✔️')
 					} else if (Number(args[0]) === 0) {
 						welkom.splice(from, 1)
 						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
@@ -2209,6 +2229,7 @@ break
 						reply('falhou')
 					}
 					break
+
 				case 'wait':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						reply(mess.wait)
