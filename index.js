@@ -50,7 +50,7 @@ const antiracismo = JSON.parse(fs.readFileSync('./src/antiracismo.json'))
 const antilink = JSON.parse(fs.readFileSync('./src/antilink.json'))
 //_FIM DOS ARQUIVOS ANTIS
 
-/********** FUNÇÕES ***************/
+/********** FUNCIONES ***************/
 const getLevelingXp = (userId) => {
             let position = false
             Object.keys(_level).forEach((i) => {
@@ -231,7 +231,7 @@ async function starts() {
     •            @${num.split('@')[0]} ELIMINADO 🤹
                       1 impostor restante   。　.
     　 　　。　　 　　　　ﾟ　　　.　      　　
-𝐀𝐯𝐢𝐬𝐨 𝐩𝐚𝐫𝐚 todos @${num.split('@')[0]} SE FUE TOTAL NO IMPORTABA ADIOS!😂👋`
+𝐀𝐯𝐢𝐬𝐨 𝐩𝐚𝐫𝐚 todos @${num.split('@')[0]} SE FUE TOTAL NO IMPORTABA ADIOS BUEN VIAJE!😂👋`
 				        
     
 				let buff = await getBuffer(ppimg)
@@ -648,7 +648,7 @@ async function starts() {
                 addLevelingXp(sender, amountXp)
                 if (requiredXp <= getLevelingXp(sender)) {
                     addLevelingLevel(sender, 1)
-                    await reply(`*「 LEVEL UP 」*\n\n➸ *Número*: ${sender}\n➸ *XP*: ${getLevelingXp(sender)}\n➸ *Level*: ${getLevel} -> ${getLevelingLevel(sender)}\n➸Classificação ${role}\n\nParabéns!!  🎉🎉`)
+                    await reply(`*「 🤹NIVEL UP🤹 」*\n\n➸ *Número*: ${sender}\n➸ *XP*: ${getLevelingXp(sender)}\n➸ *NIVEL*: ${getLevel} -> ${getLevelingLevel(sender)}\n➸Clasificacion ${role}\n\nFELICIDADES!!  🎉🎉`)
                 }
             } catch (err) {
                 console.error(err)
@@ -678,7 +678,7 @@ async function starts() {
 		if (isGroupAdmins) return reply('cara, nao poste essas coisas, é errado, mas vc e admin n irei te banir')
 		client.updatePresence(from, Presence.composing)
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`link telegram detectado ${sender.split("@")[0]} Usted será expulsado del grupo `)
+		reply(`⚠️link de WhatsApp detectado☣️ ${sender.split("@")[0]} 🚮Usted será expulsado del grupo por rata🐁🐀📵🤹 `)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 0)
@@ -695,13 +695,13 @@ async function starts() {
 		if (isGroupAdmins) return reply('cara, nao poste essas coisas, é errado, mas vc e admin n irei te banir')
 		client.updatePresence(from, Presence.composing)
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`tchau link whatsApp ${sender.split("@")[0]} Usted será expulsado del grupo `)
+		reply(`tchau ⚠️link whatsApp🚮 ${sender.split("@")[0]} 🤹Usted será expulsado del grupo🤹 `)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 0)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("no lo vuelvan hacer")
+			reply("🤹no lo vuelvan hacer🤹")
 		}, 0)
 	}
 	
@@ -734,7 +734,7 @@ async function starts() {
 		}, 0)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("vai postar merda de tiktok en otro lugar")
+			reply("vaya a postar su enlace  de tiktok en otro lugar")
 		}, 0)
 	}
 	
@@ -766,7 +766,7 @@ async function starts() {
 		}, 0)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("vai postar kwaii na casa do caralho seu mendigo")
+			reply("vaya a postar su enlace de kwaii en otro lugar mendigo")
 		}, 0)
 	}
 	
@@ -905,8 +905,8 @@ case 'antilink':
 						if (isAntiLink) return reply('o anti-link está ativo')
 						antilink.push(from)
 						fs.writeFileSync('./src/antilink.json', JSON.stringify(antilink))
-						reply('Grupo anti-link ativado com sucesso neste grupo ✔️')
-						client.sendMessage(from,`Atencao a todos os membros ativos deste grupo anti-link. ee você enviar um link de grupo, voce sera expulso daqui  grupo`, text)
+						reply('🤹Grupo anti-link ativado en este grupo 🤹👹🦀 ✔️')
+						client.sendMessage(from,`🤹👹🦀Atencion  a todos los miembros de este grupo anti-link activado cualquiera que envíe su enlace será eliminado y atacado 🤹👹`, text)
 					} else if (Number(args[0]) === 0) {
 						if (!isantilink) return reply('O modo de grupo anti-link foi desabilitado ')
 						var ini = anti.clientOf(from)
@@ -924,7 +924,7 @@ case 'level':
 					const userXp = getLevelingXp(sender)
 					if (userLevel === undefined && userXp === undefined) return reply(mess.wait)
 					sem = sender.replace('@s.whatsapp.net','')
-					resul = `┏━━❉ *LEVEL* ❉━━\n┣⊱ Número : ${sem}\n┣⊱ Seu XP :  ${userXp}\n┣⊱ Seu Level : ${userLevel}\n┣⊱Cassificação ${role}\n┗━━━━━━━━━━━━`
+					resul = `┏━━❉ *📛NIVEL📛* ❉━━\n┣⊱ Número : ${sem}\n┣⊱ Seu XP :  ${userXp}\n┣⊱ Seu Level : ${userLevel}\n┣⊱Clasificacion ${role}\n┗━━━━━━━━━━━━`
 					client.sendMessage(from, resul, text, { quoted: mek})
 					.catch(async (err) => {
                     console.error(err)
@@ -936,7 +936,7 @@ case 'level':
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Boo :𝘃')
 					if (args[0] === 'on') {
-                    if (isLevelingOn) return reply('*O comando de level já estava ativo*')
+                    if (isLevelingOn) return reply('*O comando de level yaá esta ativo*')
                     _leveling.push(groupId)
                     fs.writeFileSync('./src/leveling.json', JSON.stringify(_leveling))
                      reply(mess.levelon)
