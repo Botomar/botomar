@@ -1583,16 +1583,25 @@ client.sendMessage(from, buffer, image, {quoted: mek,caption:info})
 client.sendMessage(from, lagu, audio, {mimetype:'audio/mp4',filename: '${anu.Titulo_Encontrado}.mp3' , quoted: mek})
 break
 case 'play':
-reply (mess.wait)
-teks = body.slice(6)
-musica = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=hamilton10`)
-buffer1 = await getBuffer(musica.result.thumb)
-buffer2 = await getBuffer(musica.result.dl_link)
-teks =`𝚈𝚘𝚞𝚝𝚞𝚋𝚎 𝙿𝚕𝚊𝚢 𝙼𝚞𝚜𝚒𝚌
-𝚄𝚜𝚞𝚊́𝚛𝚒𝚘 @${sender.split("@")[0]}
-𝚝𝚒𝚝𝚞𝚕𝚘 ${musica.result.title}`
-client.sendMessage(from, buffer1, image, {quoted: mek, caption: teks })
-client.sendMessage(from, buffer2, MessageType.audio, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐝?? 𝐩𝐨𝐫 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./assets/botlogo.webp')} } }, caption: "<//>" })
+if  ( args . length  ===  0 )  return  respuesta ( `Kirim perintah * $ { prefix } play * _Judul lagu yang akan dicari_` )
+            var  srch  =  args . unirse ( '' )
+    		aramas  =  aguardar  yts ( srch ) ;
+    		aramat  =  aramas . todos 
+   			var  mulaikah  =  aramat [ 0 ] . url							
+                  prueba  {
+                    yta ( mulaikah )
+                    . entonces ( ( res )  =>  {
+                        const  { dl_link , el pulgar , título , filesizeF , tamaño de archivo }  =  res
+                        axios . obtener ( `https://tinyurl.com/api-create.php?url= $ { dl_link } ` )
+                        . entonces ( async  ( a )  =>  {
+                        si  ( Número ( tamaño del archivo )  > =  100.000 )  volver  sendMediaURL ( a partir ,  el pulgar ,  `* PLAY MUSIC * \ n \ n * Título *: $ { título } \ n * Ext *: MP3 \ n * Tamaño *: $ { filesizeF } \ n * Enlace *: $ { a . data } \ n \ n_Untuk durasi lebih dari batas disajikan dalam mektuk link_` )
+                        const  captions  =  `* REPRODUCIR MÚSICA * \ n \ n * Título *: $ { título } \ n * Ext *: MP3 \ n * Tamaño *: $ { F } \ n * Enlace *: $ { a . data } \ n \ n_Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
+                        sendMediaURL ( de ,  pulgar ,  subtítulos )
+                        aguardar  sendMediaURL ( desde ,  dl_link ) . catch ( ( )  =>  responder ( 'error' ) )
+                        } )                
+                        } )
+                        }  atrapar  ( err )  {
+                        responder ( desorden . error . API )
 break
 case 'covid19':
 post = await fetchJson(`https://api-gdr2.herokuapp.com/api/covidbr`)
