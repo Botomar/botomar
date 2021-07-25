@@ -1530,7 +1530,7 @@ break
 case 'play2':
 if (args.length < 1) return reply('Digite el nombre de la música')
                 reply('BUSCANDO SU MUSICA POR FAVOR ESPERE..')
-                anu = await fetchJson(`https://api-exteam.herokuapp.com/api/yt/playmp3?query=${body.slice(6)}&apikey=estreia`)
+                anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=shanduy10`)
                 if (anu.error) return reply(anu.error)
          //       ingfomp3 = `*Musica encontrada*\n Titulo : ${anu.title}\nCanal: ${anu.channel}\nPublicado: ${anu.published}\nViews: ${anu.views}\n\n*Enviando audio🎶*`
          msg = ('Musica encontrada enviando...\nFonte:YouTube ')
@@ -1585,7 +1585,7 @@ break
 case 'play':
 reply (mess.wait)
 teks = body.slice(6)
-musica = await fetchJson(`https://api-gdr2.herokuapp.com/api/ytplay?q=${teks}`)
+musica = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=hamilton10`)
 buffer1 = await getBuffer(musica.result.thumb)
 buffer2 = await getBuffer(musica.result.dl_link)
 teks =`𝚈𝚘𝚞𝚝𝚞𝚋𝚎 𝙿𝚕𝚊𝚢 𝙼𝚞𝚜𝚒𝚌
